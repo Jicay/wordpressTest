@@ -20,11 +20,12 @@ CREATE TABLE `wp_termmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `term_id` (`term_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_termmeta` WRITE;
 /*!40000 ALTER TABLE `wp_termmeta` DISABLE KEYS */;
+INSERT INTO `wp_termmeta` VALUES (1,17,'product_count_product_cat','1'),(2,16,'product_count_product_cat','1');
 /*!40000 ALTER TABLE `wp_termmeta` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
